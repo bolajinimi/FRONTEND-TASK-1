@@ -8,6 +8,7 @@
 //     setting,
 //     logout,
 //   } from "../../assets";
+
   import {
     PaymentLinkSideBarContainer,
     SideBarContainer,
@@ -18,48 +19,98 @@
     SideBarContent5,
     SideBarContent6,
     MainMenuText,
-    LogOutText,
+    MainMenuText2,
+    MainMenuButton,
     Span0,
     Span,
     Span7,
   } from "./dashboardsidebar.styles";
-  
+  import overview from "../../assets/overview.png";
+  import dot from "../../assets/dot.png";
+
+import wallet from "../../assets/wallet-01.png";
+import wallet2 from "../../assets/wallet-02.png";
+import wallet3 from "../../assets/wallet-03.png";
+import order from "../../assets/order.png";
+import order01 from "../../assets/order01.png";
+import order02 from "../../assets/order02.png";
+import profile from "../../assets/proile.png";
+
+
   const PaymentLinkSidebar = () => {
     return (
       <PaymentLinkSideBarContainer>
-        
-        <MainMenuText>
+        <MainMenuButton>
           {" "}
-          <Span0>Main Menu</Span0>{" "}
-        </MainMenuText>
+          <Span0>Generate Invoice</Span0>{" "}
+        </MainMenuButton>
+        
+      
   
         <SideBarContainer>
-          <SideBarContent1>
-            {/* <img src={home} /> <Span>Home</Span> */}
-          </SideBarContent1>
-          <SideBarContent2>
+            <MainMenuText>
             {" "}
-            {/* <img src={TransactionIcon} /> <Span>Transaction</Span> */}
+            <Span>Main Menu</Span>{" "}
+            </MainMenuText>
+            
+          <SideBarContent1>
+            <img src={overview} /> <Span>Overview</Span>
+          </SideBarContent1>
+
+
+          
+        </SideBarContainer>
+  
+        <SideBarContainer>
+            <MainMenuText>
+                {" "}
+                <Span>Payments</Span>{" "}
+            </MainMenuText>
+            <SideBarContent2>
+            {" "}
+            <img src={wallet} /> <Span>All Payments</Span>
           </SideBarContent2>
           <SideBarContent3>
             {" "}
-            {/* <img src={moneys} /> <Span>Payment Link</Span> */}
+            <img src={wallet2} /> <Span>Reconciled Payment</Span>
           </SideBarContent3>
           <SideBarContent4>
             {" "}
-            {/* <img src={emptyWallet2} /> <Span>Invoice</Span> */}
+            <img src={wallet3} /> <Span>Un Reconciled payment</Span>
           </SideBarContent4>
           <SideBarContent5>
             {" "}
-            {/* <img src={receipt2} /> <Span>Reports</Span>{" "} */}
+            <img src={dot} /> <Span>Manual Settlement</Span>{" "}
           </SideBarContent5>
           <SideBarContent6>
             {" "}
             {/* <img src={setting} /> <Span>Settings</Span>{" "} */}
           </SideBarContent6>
         </SideBarContainer>
-  
-        
+
+        <SideBarContainer>
+            <MainMenuText>
+                {" "}
+                <Span>Orders</Span>{" "}
+            </MainMenuText>
+            <SideBarContent2>
+            {" "}
+            <img src={order } /> <Span>All Orders</Span>
+          </SideBarContent2>
+          <SideBarContent3>
+            {" "}
+            <img src={order01} /> <Span>Pending Orders</Span>
+          </SideBarContent3>
+          <SideBarContent4>
+            {" "}
+            <img src={order02} /> <Span>Reconciled Order</Span>
+          </SideBarContent4>
+          <SideBarContent6>
+            {" "}
+            <img src={profile} /> <Span>Merchant Profile</Span>{" "}
+          </SideBarContent6>
+          
+        </SideBarContainer>
       </PaymentLinkSideBarContainer>
     );
   };

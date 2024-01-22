@@ -14,6 +14,6 @@ export const PaymentNavbar = styled.div`
 `;
 
 export const PaymentSidebar = styled.div`
-  width: 20%;
-  /* margin-top: 30%; */
+  width: 260px;
+  
 `;

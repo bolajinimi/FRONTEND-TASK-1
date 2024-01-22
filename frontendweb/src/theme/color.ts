@@ -2,7 +2,7 @@ export const colors = {
     NAVYBLUE: "#0E155B",
     GRAY: "#647787",
     LIGHT_GREY: "#CFCFCF",
-    White: "#fff",
+    WHITE: "#fff",
     LIGHT_GRAY: "#868686",
     DARK_GRAY: "#5E5E5E",
     NEUTRAL_NEUTRAL: "#363636",

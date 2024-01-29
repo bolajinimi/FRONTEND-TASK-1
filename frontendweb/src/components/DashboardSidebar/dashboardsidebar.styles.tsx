@@ -3,9 +3,9 @@ import { colors } from "../../theme/color";
 import fipayFonts from "../../theme";
 
 export const PaymentLinkSideBarContainer = styled.div`
-  height: 100vh;
-  margin-top: 10px;
+  height: 100%;
   background-color: #FFFFFF;
+  padding-top: 30px;
 ;
 `;
 
@@ -113,7 +113,7 @@ export const MainMenuButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 10px;
   margin-left: 30px;
   width: 173px;
   height: 43px;
